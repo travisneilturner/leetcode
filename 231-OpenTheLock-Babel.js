@@ -119,6 +119,8 @@ let BFS = function (deadends, current, target) {
 
 
 let openLock = function (deadends, target) {
+  discovered = {};
+  parent = {};
   return BFS(deadends, '0000', target);
 };
 
